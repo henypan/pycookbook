@@ -30,7 +30,7 @@ def search(lines, pattern, history=5):
             yield tline, previous_lines
             previous_lines.append(tline)
 
-with open('code_book_1_some_text.txt') as f:
+with open('code_book_0817_some_text.txt') as f:
     for line, prevlines in search(f, 'python', 5):
         for pline in prevlines:
             print pline
