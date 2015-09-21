@@ -99,3 +99,18 @@ from itertools import compress
 more5 = [n > 5 for n in counts]
 print more5
 print list(compress(addresses, more5))   # TODO - result seems to be wrong
+
+
+# Extracting a Subset of a Dictionary
+prices = {
+   'ACME': 45.23,
+   'AAPL': 612.78,
+   'IBM': 205.55,
+   'HPQ': 37.20,
+   'FB': 10.75
+}
+
+p1 = {key: value for key, value in prices.items() if value > 100}
+print p1
+
+# Mapping Names to Sequence Elements
